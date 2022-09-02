@@ -31,7 +31,10 @@ public class HRApp {
             employee.setEmail("rohanpatel1531@gmail.com");
             employee.setPhone("7228815397");
 
-            jmsContext.createProducer().send(topic, employee);
+            for(int i=0; i<=10; i++) {
+                jmsContext.createProducer().send(topic, employee);
+            }
+
             System.out.println("Message Sent");
 
         };
