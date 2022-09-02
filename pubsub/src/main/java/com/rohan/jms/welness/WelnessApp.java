@@ -35,7 +35,6 @@ public class WelnessApp {
             Employee employee2 = message2.getBody(Employee.class);
             System.out.println("Consumer 2: "+employee2.getFirstName());
 
-
             }
 
             
