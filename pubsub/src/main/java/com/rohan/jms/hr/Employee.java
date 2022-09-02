@@ -2,7 +2,7 @@ package com.rohan.jms.hr;
 
 import java.io.Serializable;
 
-public Class Employee implements Serializable {
+public class Employee implements Serializable {
 
     private int id;
     private String firstName;
