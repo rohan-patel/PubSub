@@ -20,7 +20,7 @@ public class WelnessApp {
         Topic topic = (Topic) context.lookup("topic/empTopic");
 
         try (ActiveMQConnectionFactory cf = new ActiveMQConnectionFactory();
-                JMSContext jmsContext = cf.createContext) {
+                JMSContext jmsContext = cf.createContext()) {
 
             JMSConsumer consumer = jmsContext.createConsumer(topic);
             Message message = consumer.receive();
